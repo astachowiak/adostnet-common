@@ -10,6 +10,12 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: kubevious-repo
+  values:
+    ingress:
+      enabled: true
+      hosts:
+      - host: kubevious.192.168.178.200.nip.io
+        paths: [ "/" ]
   interval: 5m0s
   releaseName: kubevious
   targetNamespace: kubevious
