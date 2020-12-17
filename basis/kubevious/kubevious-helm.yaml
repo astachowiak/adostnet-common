@@ -14,8 +14,10 @@ spec:
     ingress:
       enabled: true
       hosts:
-      - kubevious.192.168.178.200.nip.io
-      - kubevious.halfdozenshots.com
+      - host: kubevious.192.168.178.200.nip.io
+        paths: ["/"]
+      - host: kubevious.halfdozenshots.com
+        paths: ["/"]
   interval: 5m0s
   releaseName: kubevious
   targetNamespace: kubevious
