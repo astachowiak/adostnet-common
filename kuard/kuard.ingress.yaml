@@ -9,7 +9,7 @@ spec:
   tls:
   - hosts:
     - portal.halfdozenshots.com
-    secretName: portal-tls
+    secretName: kuard-tls
   rules:
   - host: portal.halfdozenshots.com
     http:
