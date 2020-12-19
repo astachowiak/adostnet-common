@@ -18,8 +18,11 @@ spec:
       defaultClassReplicaCount: 2
     defaultSettings:
       backupTarget: "s3://adostnet-longhorn-backup@eu-west-1/longhorn/"
+      backupTargetCredentialSecret: aws-secret
       createDefaultDiskLabeledNodes: true
       defaultDataPath: /work
+      defaultReplicaCount: 2
+      storageMinimalAvailablePercentage: 10
     ingress:
       enabled: true
       host: longhorn.192.168.178.200.nip.io
